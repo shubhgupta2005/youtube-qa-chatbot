@@ -5,6 +5,11 @@ import faiss
 import numpy as np
 from urllib.parse import urlparse, parse_qs
 import re
+# --- Add these lines for debugging ---
+st.write("--- All Available Secrets ---")
+st.write(st.secrets.to_dict())
+st.write("--- End of Secrets ---")
+# ------------------------------------
 
 # It's a good practice to handle the API key securely.
 # This code assumes you have set up your OpenAI key in Streamlit's secrets.
@@ -153,3 +158,4 @@ if st.session_state.video_processed:
             answer = answer_question(question, index, stored_chunks)
             st.write("### Answer")
             st.success(answer)
+
