@@ -1,5 +1,6 @@
 streamlit
-youtube-transcript-api
+youtube-transcript-api==1.6.2
 openai
 faiss-cpu
+
 numpy
