@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
 from openai import OpenAI
@@ -106,3 +106,4 @@ if youtube_url and question:
         st.success(answer)
     else:
         st.error("Transcript not available for this video")
+
